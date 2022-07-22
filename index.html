@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="./fa.css"> -->
+  <link rel="stylesheet" href="./style.css">
+
+  <title>JavaScript</title>
+</head>
+<body>
+  <main>
+    <div id="notify_div">
+      <span id="notification"></span>
+      <button id="notification_remove_btn"><i class="fa-solid fa-x"></i></button>
+    </div>
+    <div class="item_card">
+      <img src="./img1.jpg" alt="Roll">
+      <div class="flex-column item_card_bottom">
+        <div class="flex-row align-center justify-evenly item_card__qty__price">
+          <div>
+            <button class="large_btn decrease_btn">-</button>
+            <span class="item_card__qty">0</span>
+            <button class="large_btn increase_btn">+</button>
+          </div>
+          <div>Rs. <span class="item_card__calc_price">0</span></div>
+        </div>
+        <div class="flex-row justify-around">
+          <span class="main_item_name">Roll</span>
+          <span>Rs.<span class="item_price">250</span>/item</span>
+        </div>
+        <button class="large_btn add_to_cart_btn">Add to cart</button>
+      </div>
+    </div>
+    <div class="item_card">
+      <img src="./img2.jpg" alt="pizza">
+      <div class="flex-column item_card_bottom">
+        <div class="flex-row align-center justify-evenly item_card__qty__price">
+          <div>
+            <button class="large_btn decrease_btn">-</button>
+            <span class="item_card__qty">0</span>
+            <button class="large_btn increase_btn">+</button>
+          </div>
+          <div>Rs. <span class="item_card__calc_price">0</span></div>
+        </div>
+        <div class="flex-row justify-around">
+          <span class="main_item_name">Pizza</span>
+          <span>Rs.<span class="item_price">600</span>/item</span>
+        </div>
+        <button class="large_btn add_to_cart_btn">Add to cart</button>
+      </div>
+    </div>
+    <div class="item_card">
+      <img src="./img3.jpg" alt="Burger">
+      <div class="flex-column item_card_bottom">
+        <div class="flex-row align-center justify-evenly item_card__qty__price">
+          <div>
+            <button class="large_btn decrease_btn">-</button>
+            <span class="item_card__qty">0</span>
+            <button class="large_btn increase_btn">+</button>
+          </div>
+          <div>Rs. <span class="item_card__calc_price">0</span></div>
+        </div>
+        <div class="flex-row justify-around">
+          <span class="main_item_name">Burger</span>
+          <span>Rs.<span class="item_price">450</span>/item</span>
+        </div>
+        <button class="large_btn add_to_cart_btn">Add to cart</button>
+      </div>
+    </div>
+  </main>
+  <aside>
+    <h1>Cart</h1>
+    <div id="cart_total_div">Total Price: Rs. <span id="cart_total_price">0</span></div>
+    <div id="cart_item_boxes_div"></div>
+  </aside>
+  <script src="./fa.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
