@@ -71,10 +71,21 @@ main {
   padding: 1rem;
   position: relative;
 }
+#cart_control_btn {
+  position: fixed;
+  top: .5rem;
+  right: .5rem;
+  z-index: 2;
+  display: none;
+}
+#cart_control_btn_icon {
+  margin-left: .5rem;
+}
 #notify_div {
-  position: absolute;
+  position: fixed;
   right: 50%;
-  left: 50%;
+  top: .3rem;
+  transform: translateX(50%);
   width: fit-content;
   border-radius: .5rem;
   color: #fff;
@@ -228,10 +239,29 @@ h1 {
 
 @media (max-width: 850px) {
   main {
-    grid-template-columns: repeat(2, 1fr);
-    width: 50%;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
   }
   aside {
     width: 50%;
+    display: none;
+  }
+  #cart_control_btn {
+    display: block;
+  }
+}
+
+@media (max-width: 650px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+  aside {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  main {
+    grid-template-columns: 1fr;
   }
 }

@@ -207,3 +207,21 @@ function hideNotifyDivAfterSomeTime() {
   notify_div.style.opacity = "0";
   notify_div.style.transition = ".6s opacity";
 }
+
+
+let cart_control_btn = document.getElementById("cart_control_btn");
+
+cart_control_btn.addEventListener("click", function() {
+  if (document.getElementById("cart").style.display == "none") {
+    document.getElementById("cart").style.display = "block";
+    cart_control_btn.style.color = "red";
+    cart_control_btn.innerHTML = `
+    Cart<i id="cart_control_btn_icon" class="fa-solid fa-x"></i>`;
+  } else {
+    document.getElementById("cart").style.display = "none";
+    cart_control_btn_icon.classList = "fa-solid fa-bars";    
+    cart_control_btn.style.color = "black";
+    cart_control_btn.innerHTML = `
+      Cart<i id="cart_control_btn_icon" class="fa-solid fa-bars"></i>`;
+  }
+});
